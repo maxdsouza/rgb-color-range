@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático do Módulo 1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <p>(R) Vermelho:</p>
+        </td>
+        <td>
+          <input
+            type="range"
+            name="vermelho"
+            min="0"
+            max="255"
+            value="0"
+            onchange="atualizaTextoVermelho(this.value); corQuadradoRGB();"
+          />
+        </td>
+        <td>
+          <input
+            type="number"
+            id="rangeVermelho"
+            class="tamanho40"
+            value="0"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>(G) Verde:</p>
+        </td>
+        <td>
+          <input
+            type="range"
+            name="verde"
+            min="0"
+            max="255"
+            value="0"
+            onchange="atualizaTextoVerde(this.value); corQuadradoRGB();"
+          />
+        </td>
+        <td>
+          <input
+            type="number"
+            id="rangeVerde"
+            class="tamanho40"
+            value="0"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>(B) Azul:</p>
+        </td>
+        <td>
+          <input
+            type="range"
+            name="azul"
+            min="0"
+            max="255"
+            value="0"
+            onchange="atualizaTextoAzul(this.value); corQuadradoRGB();"
+          />
+        </td>
+        <td>
+          <input
+            type="number"
+            id="rangeAzul"
+            class="tamanho40"
+            value="0"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr class="centralizar">
+        <td></td>
+        <td>
+          <div id="quadrado"></div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
